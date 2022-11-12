@@ -1,0 +1,40 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.footerNavigation {
+  @media ($l) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.footerNavigation__item {
+  &:not(:last-child) {
+    padding-bottom: 16px;
+  }
+
+  @media ($l) {
+    &:not(:last-child) {
+      padding-right: 32px;
+      padding-bottom: 0;
+    }
+  }
+}
+
+.footerNavigation__link {
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 16px;
+  color: $whiteColor;
+  transition: opacity $duration;
+
+  @media ($l) {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}

@@ -9,10 +9,17 @@
   display: flex;
   justify-content: space-between;
   padding: 8px 0;
+
+  @media ($l) {
+    padding: 16px 0;
+  }
 }
 
 .header__link {
   margin-top: 8px;
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 17px;
   color: $whiteColor;
   transition: opacity $duration;
 

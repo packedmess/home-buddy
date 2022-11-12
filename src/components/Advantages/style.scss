@@ -2,10 +2,22 @@
 @import '../../styles/mixins.scss';
 .advantages {
   padding: 44px 0;
+
+  @media ($l) {
+    padding: 48px 0;
+  }
 }
 
 .advantages__heading {
   @include visuallyHidden;
+}
+
+.advantages__list {
+  @media ($l) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 38px;
+  }
 }
 
 .advantages__item {
@@ -15,6 +27,14 @@
   &:not(:last-child) {
     padding-bottom: 24px;
   }
+
+  @media ($l) {
+    flex-direction: column;
+
+    &:not(:last-child) {
+      padding-bottom: 0;
+    }
+  }
 }
 
 .advantages__itemIcon {
@@ -22,6 +42,13 @@
   min-width: 64px;
   height: 64px;
   margin-right: 16px;
+
+  @media ($l) {
+    width: 72px;
+    height: 72px;
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
 }
 
 .advantages__itemText {
@@ -30,9 +57,19 @@
   font-weight: $medium;
   font-size: 16px;
   line-height: 24px;
-  color: #263238;
+  color: $darkSlateColor;
+
+  @media ($l) {
+    display: block;
+    text-align: center;
+  }
 }
 
 .advantages__itemStars {
   margin-right: 4px;
+
+  @media ($l) {
+    width: 100%;
+    margin-right: 0;
+  }
 }

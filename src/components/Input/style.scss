@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.input {
+  position: relative;
+}
+
+.input__label {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  color: #222222;
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 17px;
+  transition: all $duration;
+}
+
+.input__input {
+  display: block;
+  width: 100%;
+  padding: 20px 16px;
+  color: #222222;
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 17px;
+  background-color: $deepBlueColor;
+  border: 1px solid $deepBlueColor;
+  border-radius: 4px;
+  transition: all $duration;
+
+  &::placeholder {
+    opacity: 0;
+  }
+
+  &:focus {
+    outline: none;
+    color: $darkBlueColor;
+    border-color: $darkBlueColor;
+
+    &::placeholder {
+      opacity: 1;
+    }
+
+    & ~ .input__label {
+      top: 4px;
+      font-size: 11px;
+      color: $darkBlueColor;
+    }
+  }
+
+  &:not(:placeholder-shown) {
+    & ~ .input__label {
+      top: 4px;
+      font-size: 11px;
+    }
+  }
+
+  &:hover:not(:focus):not(:placeholder-shown) {
+    color: $darkBlueColor;
+    border-color: $darkBlueColor;
+
+    & ~ .input__label {
+      opacity: 0;
+    }
+  }
+
+  &:invalid:not(:placeholder-shown) {
+    border-color: $redColor;
+
+    & ~ .input__label {
+      color: $redColor;
+    }
+  }
+}

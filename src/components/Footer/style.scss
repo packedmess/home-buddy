@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.footer {
+  background-color: $darkBlueColor;
+}
+
+.footer__wrapper {
+  padding: 24px 0 44px;
+
+  @media ($l) {
+    padding: 24px 0 60px;
+    text-align: center;
+  }
+}
+
+.footer__logo {
+  font-size: 30px;
+  line-height: 37px;
+  margin-bottom: 24px;
+}

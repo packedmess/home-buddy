@@ -6,6 +6,11 @@
   font-size: 24px;
   line-height: 29px;
   color: $whiteColor;
+
+  @media ($l) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .logo__dot {
@@ -19,4 +24,9 @@
   text-transform: uppercase;
   letter-spacing: 0.15em;
   opacity: 0.8;
+
+  @media ($l) {
+    font-size: 10px;
+    line-height: 12px;
+  }
 }
