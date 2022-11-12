@@ -1,0 +1,28 @@
+// Outline
+@mixin outline {
+  &:focus-visible {
+    outline: 3px solid deepskyblue;
+    outline-offset: 3px;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: 3px solid deepskyblue;
+    outline-offset: 3px;
+  }
+}
+
+// Accessible hiding
+@mixin visuallyHidden {
+  & {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}

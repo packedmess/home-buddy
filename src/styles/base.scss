@@ -1,0 +1,40 @@
+@import './variables.scss';
+@import './mixins.scss';
+@import './normalize.scss';
+@import './reset.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-width: 320px;
+  height: 100%;
+  background: $whiteColor;
+  color: $blackColor;
+  font: {
+    weight: $medium;
+    size: 14px;
+    family: 'Montserrat', sans-serif;
+  }
+  line-height: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+a {
+  &,
+  &:hover,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+}

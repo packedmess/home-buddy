@@ -1,0 +1,10 @@
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.main {
+  display: block;
+  flex-grow: 1;
+}

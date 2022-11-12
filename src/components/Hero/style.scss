@@ -1,0 +1,64 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.hero {
+  background-color: $darkBlueColor;
+}
+
+.hero__wrapper {
+  padding: 20px 0 52px;
+}
+
+.hero__heading {
+  font-weight: $semibold;
+  font-size: 23px;
+  line-height: 28px;
+  color: $whiteColor;
+  margin-bottom: 16px;
+}
+
+.hero__heading_marked {
+  color: $whiteColor;
+  background-color: $greenColor;
+  border-radius: 4px;
+}
+
+.hero__text {
+  font-weight: $regular;
+  font-size: 14px;
+  line-height: 20px;
+  color: $whiteColor;
+  margin-bottom: 16px;
+}
+
+.hero__imageWrapper {
+  position: relative;
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero__imageBadge {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: $bold;
+  font-size: 11px;
+  line-height: 16px;
+  background-color: $whiteColor;
+  border-radius: 8px;
+}
+
+.hero__imageBadgeIcon {
+  width: 24px;
+  height: 24px;
+  margin-left: 4px;
+}

@@ -1,0 +1,23 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.header {
+  background-color: $darkBlueColor;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+.header__link {
+  margin-top: 8px;
+  color: $whiteColor;
+  transition: opacity $duration;
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
