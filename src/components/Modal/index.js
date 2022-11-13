@@ -52,7 +52,13 @@ export const Modal = ({ isOpen, onClose }) => {
           <CloseIcon />
         </button>
       </div>
-      {step === 1 && <StepOne setValue={setStepOneValue} setStep={setStep} />}
+      {step === 1 && (
+        <StepOne
+          value={stepOneValue}
+          setValue={setStepOneValue}
+          setStep={setStep}
+        />
+      )}
       {step === 2 && <StepTwo stepOneValue={stepOneValue} onClose={onClose} />}
     </div>,
     document.getElementById('root')

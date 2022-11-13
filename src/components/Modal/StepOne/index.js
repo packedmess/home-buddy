@@ -3,7 +3,7 @@ import { ReactComponent as YesIcon } from '../../../icons/yes.svg';
 import { ReactComponent as NoIcon } from '../../../icons/no.svg';
 import { Button } from '../../Button';
 
-export const StepOne = ({ setValue, setStep }) => {
+export const StepOne = ({ value, setValue, setStep }) => {
   const handleChange = (e) => {
     setValue(e.target.value);
   };
@@ -43,7 +43,7 @@ export const StepOne = ({ setValue, setStep }) => {
           </label>
         </li>
       </ul>
-      <Button className='stepOne__button' onClick={() => setStep(2)}>
+      <Button className='stepOne__button' onClick={() => value && setStep(2)}>
         Next
       </Button>
     </div>
