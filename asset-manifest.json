@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/home-buddy/static/css/main.7342f14e.css",
-    "main.js": "/home-buddy/static/js/main.2eb37c14.js",
+    "main.js": "/home-buddy/static/js/main.f1cafd3e.js",
     "static/media/background.png": "/home-buddy/static/media/background.a49dca8ef9cce8c0bd6d.png",
     "static/media/badge.svg": "/home-buddy/static/media/badge.8b16a168328540356c8aeb0ba8693753.svg",
     "static/media/savings.svg": "/home-buddy/static/media/savings.4dcb8ee5d8ae87e18636c19644dbf939.svg",
@@ -16,10 +16,10 @@
     "static/media/no.svg": "/home-buddy/static/media/no.c1c6cfffa51146c3fcf3a41dd1e5dc0a.svg",
     "static/media/yes.svg": "/home-buddy/static/media/yes.dfd6354b3397700d0b7b9ad90cef46b0.svg",
     "main.7342f14e.css.map": "/home-buddy/static/css/main.7342f14e.css.map",
-    "main.2eb37c14.js.map": "/home-buddy/static/js/main.2eb37c14.js.map"
+    "main.f1cafd3e.js.map": "/home-buddy/static/js/main.f1cafd3e.js.map"
   },
   "entrypoints": [
     "static/css/main.7342f14e.css",
-    "static/js/main.2eb37c14.js"
+    "static/js/main.f1cafd3e.js"
   ]
 }
