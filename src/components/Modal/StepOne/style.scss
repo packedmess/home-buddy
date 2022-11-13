@@ -1,0 +1,100 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.stepOne {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px 16px;
+
+  @media ($l) {
+    padding: 96px 16px;
+    text-align: center;
+  }
+}
+
+.stepOne__heading {
+  font-weight: $bold;
+  font-size: 23px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media ($l) {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 24px;
+  }
+}
+
+.stepOne__formList {
+  padding-bottom: 16px;
+
+  @media ($l) {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 24px;
+  }
+}
+
+.stepOne__formItem {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media ($l) {
+    &:not(:last-child) {
+      margin-right: 16px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.stepOne__formItemLabel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 16px 24px;
+  border: 2px solid $deepBlueColor;
+  border-radius: 8px;
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 20px;
+  transition: border-color $duration;
+  cursor: pointer;
+
+  @media ($l) {
+    min-width: 168px;
+    flex-direction: column;
+    padding: 24px;
+  }
+}
+
+.stepOne__formItemLabel:hover {
+  border-color: $orangeColor;
+}
+
+.stepOne__formItemIcon {
+  margin-right: 16px;
+
+  @media ($l) {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+}
+
+.stepOne__formItem input {
+  @include visuallyHidden;
+}
+
+.stepOne__formItemInput:checked + label {
+  border-color: $orangeColor;
+}
+
+.stepOne__button {
+  width: 100%;
+
+  @media ($l) {
+    width: auto;
+  }
+}

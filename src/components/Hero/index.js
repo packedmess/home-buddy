@@ -21,19 +21,23 @@ export const Hero = () => {
               Ideal for detached and semi-detached homes with sloped roofs.
             </p>
           </div>
-          <div class='hero__imageWrapper'>
+          <div className='hero__imageWrapper'>
             <img
-              class='hero__image'
+              className='hero__image'
               src='images/hero_image.png'
               alt='House wall'
               loading='lazy'
             />
-            <div class='hero__imageBadge'>
-              <div class='hero__imageBadgeWrapper'>
-                <a href='https://google.com' class='hero__imageBadgeLink'>
+            <div className='hero__imageBadge'>
+              <div className='hero__imageBadgeWrapper'>
+                <a href='https://google.com' className='hero__imageBadgeLink'>
                   As seen on
                 </a>
-                <NbcIcon width={32} height={32} class='hero__imageBadgeIcon' />
+                <NbcIcon
+                  width={32}
+                  height={32}
+                  className='hero__imageBadgeIcon'
+                />
               </div>
             </div>
           </div>

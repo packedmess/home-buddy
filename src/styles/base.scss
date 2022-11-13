@@ -6,8 +6,7 @@
 * {
   box-sizing: border-box;
 
-  &:focus-visible,
-  &:focus:not(:focus-visible) {
+  &:focus-visible {
     outline: 3px solid deepskyblue;
   }
 }

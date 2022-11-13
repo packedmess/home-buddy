@@ -4,9 +4,10 @@ export const Input = ({
   id,
   type,
   name,
-  value,
+  label,
   placeholder,
   required,
+  onChange,
   className,
 }) => {
   return (
@@ -18,9 +19,10 @@ export const Input = ({
         placeholder={placeholder}
         required={required}
         className='input__input'
+        onChange={(e) => onChange(e)}
       />
-      <label for='zip' className='input__label'>
-        Enter ZIP Code
+      <label htmlFor='zip' className='input__label'>
+        {label}
       </label>
     </div>
   );

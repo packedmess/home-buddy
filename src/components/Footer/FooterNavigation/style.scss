@@ -26,7 +26,7 @@
   font-size: 14px;
   line-height: 16px;
   color: $whiteColor;
-  transition: opacity $duration;
+  transition: text-decoration $duration;
 
   @media ($l) {
     font-size: 12px;
@@ -35,6 +35,6 @@
 
   &:hover,
   &:active {
-    opacity: 0.8;
+    text-decoration: underline;
   }
 }

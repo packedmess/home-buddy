@@ -1,0 +1,89 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/mixins.scss';
+
+.stepTwo {
+  padding: 24px 16px;
+
+  @media ($l) {
+    padding: 96px 16px;
+    text-align: center;
+  }
+}
+
+.stepTwo__heading {
+  font-weight: $bold;
+  font-size: 23px;
+  line-height: 32px;
+  text-align: center;
+  margin-bottom: 8px;
+
+  @media ($l) {
+    font-size: 25px;
+    line-height: 36px;
+    margin-bottom: 4px;
+  }
+}
+
+.stepTwo__text {
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  margin-bottom: 16px;
+
+  @media ($l) {
+    margin-bottom: 24px;
+  }
+}
+
+.stepTwo__textBold {
+  font-weight: $bold;
+  color: $greyColor;
+}
+
+.stepTwo__inputWrapper {
+  margin-bottom: 16px;
+
+  @media ($l) {
+    max-width: 250px;
+    margin: 0 auto 24px;
+  }
+}
+
+.stepTwo__input {
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+
+  @media ($l) {
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+  }
+}
+
+.stepTwo__button {
+  width: 100%;
+  margin-bottom: 16px;
+
+  @media ($l) {
+    width: auto;
+  }
+}
+
+.stepTwo__note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stepTwo__lockIcon {
+  margin-right: 8px;
+}
+
+.stepTwo__noteText {
+  font-weight: $medium;
+  font-size: 14px;
+  line-height: 23px;
+  color: $greyColor;
+}
